@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejwan Parvej Tauhid</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Animated background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(-45deg, #1c1c1c, #282828, #1a1a1a, #333333);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* Big circular profile picture */
+        .profile {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #7289da;
+            box-shadow: 0 0 25px #7289da;
+            transition: 0.3s;
+        }
+
+        .profile:hover {
+            transform: scale(1.05); /* slight zoom effect on hover */
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            margin: 20px 0 10px 0;
+        }
+
+        p.bio {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 20px 0 40px 0;
+        }
+
+        /* Social links */
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            background: #3a3a3a;
+            transition: 0.3s;
+            box-shadow: 0 0 15px #3a3a3a;
+        }
+
+        .links a:hover {
+            background: #7289da;
+            box-shadow: 0 0 20px #7289da;
+        }
+
+        /* Discord button smaller but visible */
+        .discord-cta {
+            margin-top: 50px;
+        }
+
+        .discord-cta a {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 1.15rem;
+            border-radius: 50px;
+            background: #7289da;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 0 20px #7289da;
+        }
+
+        .discord-cta a:hover {
+            background: #5b6eae;
+            box-shadow: 0 0 30px #7289da;
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .links a {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+            }
+            .discord-cta a {
+                font-size: 1.05rem;
+                padding: 12px 28px;
+            }
+            .profile {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile -->
+        <img src="profile.jpg" alt="Rejwan Parvej Tauhid" class="profile">
+
+        <!-- Name -->
+        <h1>Rejwan Parvej Tauhid</h1>
+
+        <!-- Bio -->
+        <p class="bio">
+            What’s up, I’m Rejwan Parvej Tauhid, also known as Md. Rejwan Tauhid. 
+            I’m a student living in Pabna, Bangladesh. I am a fan of photography, 
+            technology, and design. I’m also interested in sports and gaming. 
+            You can call me with a click on the button above and please feel free 
+            to reach out to me via the links provided below.
+        </p>
+
+        <!-- Social Links -->
+        <div class="links">
+            <a href="https://facebook.com/tauhidrpt" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://instagram.com/tauhid_rpt" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/tauhid_rpt" target="_blank"><i class="fab fa-twitter"></i> Twitter/X</a>
+            <a href="https://github.com/tauhidrpt" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+
+        <!-- Discord button -->
+        <div class="discord-cta">
+            <a href="https://discord.gg/wU7rT3VZwG" target="_blank">
+                Join My Discord Server
+            </a>
+        </div>
+    </div>
+</body>
+</html>
