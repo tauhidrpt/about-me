@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rejwan Parvej Tauhid</title>
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 
@@ -15,7 +18,7 @@
   --bg3:#2c5364;
   --card:rgba(255,255,255,0.08);
   --text:white;
-  --linkBorder:rgba(255,255,255,0.15);
+  --border:rgba(255,255,255,0.15);
 }
 
 body.light{
@@ -24,7 +27,7 @@ body.light{
   --bg3:#e0eafc;
   --card:rgba(255,255,255,0.85);
   --text:#111;
-  --linkBorder:rgba(0,0,0,0.15);
+  --border:rgba(0,0,0,0.15);
 }
 
 *{
@@ -57,33 +60,36 @@ canvas{
   z-index:-1;
 }
 
+/* CARD */
 .card{
   width:90%;
   max-width:520px;
   margin:80px auto;
   background:var(--card);
-  backdrop-filter:blur(25px);
+  backdrop-filter:blur(20px);
   border-radius:30px;
   padding:60px 40px;
   text-align:center;
   box-shadow:0 25px 70px rgba(0,0,0,0.6);
-  border:1px solid var(--linkBorder);
-  transition:0.4s;
+  border:1px solid var(--border);
 }
 
+/* PROFILE */
 .profile{
-  width:140px;
-  height:140px;
+  width:180px;
+  height:180px;
   border-radius:50%;
   object-fit:cover;
   border:3px solid #00f2ff;
-  box-shadow:0 0 30px #00f2ff;
+  box-shadow:0 0 18px rgba(0,242,255,0.6);
   margin-bottom:25px;
 }
 
+/* TEXT */
 h1{margin-bottom:10px;}
 .bio{opacity:0.85;margin-bottom:35px;}
 
+/* LINKS */
 .links{
   display:flex;
   flex-direction:column;
@@ -98,7 +104,7 @@ h1{margin-bottom:10px;}
   color:var(--text);
   background:rgba(255,255,255,0.1);
   transition:0.3s;
-  border:1px solid var(--linkBorder);
+  border:1px solid var(--border);
 }
 
 .links a:hover{
@@ -107,7 +113,7 @@ h1{margin-bottom:10px;}
   box-shadow:0 0 20px #00f2ff;
 }
 
-/* Theme Button */
+/* THEME BUTTON */
 .theme-btn{
   position:fixed;
   top:20px;
@@ -140,6 +146,7 @@ body:not(.light) .sun{
   opacity:0;
   transform:scale(0) rotate(-180deg);
 }
+
 </style>
 </head>
 
@@ -172,7 +179,7 @@ function toggleTheme(){
   document.body.classList.toggle("light");
 }
 
-/* Connected Particles */
+/* CONNECTED PARTICLES */
 const canvas=document.getElementById("particles");
 const ctx=canvas.getContext("2d");
 
